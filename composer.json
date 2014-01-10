@@ -2,7 +2,7 @@
     "name": "themainframe/veto-skeleton",
     "description": "A basic skeleton installation for the Veto framework.",
     "require": {
-        "themainframe/veto": "dev"
+        "themainframe/veto": "dev-master"
     },
     "authors": [
         {
