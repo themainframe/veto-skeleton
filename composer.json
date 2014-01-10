@@ -1,0 +1,14 @@
+{
+    "name": "themainframe/veto-skeleton",
+    "description": "A basic skeleton installation for the Veto framework.",
+    "require": {
+        "themainframe/veto": "dev"
+    },
+    "authors": [
+        {
+            "name": "Damien Walsh",
+            "email": "me@damow.net"
+        }
+    ],
+    "minimum-stability": "dev"
+}
