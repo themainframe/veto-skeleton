@@ -1,6 +1,9 @@
 {
     "name": "themainframe/veto-skeleton",
     "description": "A basic skeleton installation for the Veto framework.",
+    "autoload": {
+        "psr-0": { "": "src/" }
+    },
     "require": {
         "themainframe/veto": "dev-master"
     },
