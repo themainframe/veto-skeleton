@@ -1,0 +1,56 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "288800aa549495634c7b412aeedf1bec",
+    "packages": [
+        {
+            "name": "themainframe/veto",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/themainframe/veto.git",
+                "reference": "bc7d6b06e5d4a09c8e8df216509ce25540174aea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/themainframe/veto/zipball/bc7d6b06e5d4a09c8e8df216509ce25540174aea",
+                "reference": "bc7d6b06e5d4a09c8e8df216509ce25540174aea",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Veto": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Damien Walsh",
+                    "email": "me@damow.net",
+                    "homepage": "http://www.damow.net/"
+                }
+            ],
+            "description": "Veto is a super-lightweight PHP framework to make building web applications easier.",
+            "time": "2014-01-11 01:03:50"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "themainframe/veto": 20
+    },
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
+}
