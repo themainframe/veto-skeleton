@@ -1,8 +1,36 @@
 {
 
     "routes": {
+        "/": {
+            "controller": "controllers.helloworld",
+            "action": "sayHello"
+        }
+    },
 
+    "layers": [
+        "layers.router"
+    ],
 
+    "services": {
+
+        "twig.loader": {
+            "class": "\\Twig_Loader_Filesystem",
+            "parameters": ["../view/"]
+        },
+
+        "twig": {
+            "class": "\\Twig_Environment",
+            "parameters": ["@twig.loader", []]
+        },
+
+        "layers.router": {
+            "class": "\\Veto\\Layer\\RouterLayer"
+        },
+
+        "controllers.helloworld": {
+            "class": "\\Controller\\HelloWorld",
+            "persistent": true
+        }
 
     }
 
