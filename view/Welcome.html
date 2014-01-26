@@ -1,2 +1,76 @@
-<h1>Welcome to Veto</h1>
-<p>Veto is an extremely lightweight PHP framework designed for beginner web application programmers.</p>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome to Veto</title>
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+        <style type="text/css">
+            * { font-family: "pt sans", sans-serif; }
+
+            header {
+                font-weight: bold;
+                margin: 0px 0px 30px 0px;
+                font-size: 300%;
+                text-align: center;
+            }
+
+            body,html {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            section {
+                margin: auto;
+                width: 600px;
+                height: 200px;
+                position: relative;
+                top: 50%;
+                margin-top: -100px;
+            }
+
+            code {
+                font-family: monospace;
+                background: #fafafa;
+                padding: 2px;
+                border: 1px solid #efefef;
+                border-radius: 6px;
+            }
+
+            footer {
+                width: 100%;
+                text-align: center;
+                color: #cfcfcf;
+                position: absolute;
+                top: 100%;
+                margin-top: -40px;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <section>
+
+            <header>Ready, set, code.</header>
+
+            <p>
+                <strong>
+                    Veto is lightweight PHP framework designed for beginner web application programmers.
+                </strong>
+
+                Best of all, you just installed it.
+            </p>
+
+            <p>
+                Get started by taking a look at <code>config/app.json</code>. The <code>routes</code> section is your
+                routing table. The <code>services</code> section defines your controllers. It's easy.
+            </p>
+
+        </section>
+
+
+        <footer>
+            &copy; Damien Walsh 2014 - Veto {{ version }}
+        </footer>
+    </body>
+</html>

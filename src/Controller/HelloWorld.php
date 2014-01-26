@@ -7,10 +7,17 @@ use Veto\HTTP\Response;
 
 class HelloWorld extends AbstractController
 {
+    public function __construct($twig)
+    {
+        $this->twig = $twig;
+    }
+
     public function sayHelloAction(Request $request)
     {
-        $twig = $this->get('twig');
-        $resp = new Response($twig->render('Welcome.html'));
+        $resp = new Response($this->twig->render(
+            'Welcome.html',
+            array('version' => $this->get('app')->version)
+        ));
 
         return $resp;
     }

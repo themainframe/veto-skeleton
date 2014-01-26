@@ -29,6 +29,7 @@
 
         "controllers.helloworld": {
             "class": "\\Controller\\HelloWorld",
+            "parameters": ["@twig"],
             "persistent": true
         }
 
