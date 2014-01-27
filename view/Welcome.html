@@ -51,7 +51,13 @@
 
         <section>
 
-            <header>Ready, set, code.</header>
+            <header>
+            {% if name is defined %}
+                Howdy, {{ name }}
+            {% else %}
+                Ready, set, code.
+            {% endif %}
+            </header>
 
             <p>
                 <strong>

@@ -1,10 +1,18 @@
 {
     "routes": {
+
         "home": {
             "url": "/",
             "controller": "controllers.helloworld",
-            "action": "sayHelloAction"
+            "action": "sayHello"
+        },
+
+        "show_your_name": {
+            "url": "/{yourName}",
+            "controller": "controllers.helloworld",
+            "action": "sayYourName"
         }
+
     },
 
     "layers": [
