@@ -7,7 +7,7 @@ use Veto\HTTP\Response;
 
 class HelloWorld extends AbstractController
 {
-    public function __construct($twig)
+    public function __construct(\Twig_Environment $twig)
     {
         $this->twig = $twig;
     }
