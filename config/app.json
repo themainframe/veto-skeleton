@@ -2,8 +2,9 @@
 
     "routes": {
         "/": {
+            "url": "/",
             "controller": "controllers.helloworld",
-            "action": "sayHello"
+            "action": "sayHelloAction"
         }
     },
 
