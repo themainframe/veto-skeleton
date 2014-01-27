@@ -7,7 +7,7 @@ A basic skeleton installation for the Veto framework. If you want to start a new
 
 1. **Clone this repository:**  
 
-        git clone git@github.com:themainframe/veto-skeleton.git veto
+        git clone https://github.com/themainframe/veto-skeleton.git veto
         cd veto
         
 2. **Get composer:**
