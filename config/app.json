@@ -1,10 +1,6 @@
 {
     "routes": {
-<<<<<<< HEAD
         "home": {
-=======
-        "/": {
->>>>>>> routing
             "url": "/",
             "controller": "controllers.helloworld",
             "action": "sayHelloAction"
