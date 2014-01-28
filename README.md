@@ -5,15 +5,10 @@ A basic skeleton installation for the Veto framework. If you want to start a new
 
 ### Installing
 
-1. **Clone this repository** and go into the new directory:  
-
-        git clone https://github.com/themainframe/veto-skeleton.git veto
-        cd veto
-        
-2. **Get composer:**
+1. **Get composer:**
 
         curl -sS https://getcomposer.org/installer | php
         
-3. **Install Veto:**
+2. **Install Veto**, in this case, in a new directory called `myproject`:
 
-        php composer.phar install
+        php composer.phar create-project themainframe/veto-skeleton -s dev myproject
