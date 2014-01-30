@@ -24,6 +24,8 @@ class HelloWorld extends AbstractController
 
     public function sayYourName(Request $request, $yourName)
     {
+        throw new \Exception('Ooops! Everything went to shit!');
+
         $resp = new Response($this->twig->render(
             'Welcome.html',
             array(
