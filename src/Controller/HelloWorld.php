@@ -13,14 +13,14 @@ class HelloWorld extends AbstractController
         $this->twig = $twig;
     }
 
-    public function sayHello(Request $request)
+    public function sayHello()
     {
         return new TwigResponse('Welcome.html', array(
             'version' => $this->get('app')->version
         ));
     }
 
-    public function sayYourName(Request $request, $yourName)
+    public function sayYourName($yourName)
     {
         return new TwigResponse('Welcome.html', array(
             'version' => $this->get('app')->version,
