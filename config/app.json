@@ -3,43 +3,52 @@
 
         "home": {
             "url": "/",
-            "controller": "controllers.helloworld",
+            "controller": "controller.helloworld",
             "action": "sayHello"
         },
 
         "show_your_name": {
             "url": "/{yourName}",
-            "controller": "controllers.helloworld",
+            "controller": "controller.helloworld",
             "action": "sayYourName"
         }
 
     },
 
-    "layers": [
-        "layers.router"
-    ],
+    "layers": {
+        "router": "layer.router",
+        "twig": "layer.twig"
+    },
 
     "services": {
 
-        "twig.loader": {
-            "class": "\\Twig_Loader_Filesystem",
-            "parameters": ["../view/"]
-        },
-
         "twig": {
-            "class": "\\Twig_Environment",
-            "parameters": ["@twig.loader", []]
+            "loader": {
+                "class": "\\Twig_Loader_Filesystem",
+                "parameters": ["../view/"]
+            },
+            "environment": {
+                "class": "\\Twig_Environment",
+                "parameters": ["@twig.loader", []]
+            }
         },
 
-        "layers.router": {
-            "class": "\\Veto\\Layer\\RouterLayer"
+        "layer": {
+            "router": {
+                "class": "\\Veto\\Layer\\RouterLayer"
+            },
+            "twig": {
+                "class": "\\Veto\\Twig\\Layer\\TwigLayer",
+                "parameters": ["@twig.environment"]
+            }
         },
 
-        "controllers.helloworld": {
-            "class": "\\Controller\\HelloWorld",
-            "parameters": ["@twig"],
-            "persistent": true
+        "controller": {
+            "helloworld": {
+                "class": "\\Controller\\HelloWorld",
+                "parameters": ["@twig.environment"],
+                "persistent": true
+            }
         }
-
     }
 }
