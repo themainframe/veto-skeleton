@@ -2,8 +2,6 @@
 namespace Controller;
 
 use Veto\MVC\AbstractController;
-use Veto\HTTP\Request;
-use Veto\HTTP\Response;
 use Veto\Twig\HTTP\TwigResponse;
 
 class HelloWorld extends AbstractController
