@@ -47,7 +47,7 @@
             "helloworld": {
                 "class": "\\Controller\\HelloWorld",
                 "parameters": ["@twig.environment"],
-                "persistent": true
+                "one_shot": true
             }
         }
     }
