@@ -23,13 +23,11 @@
     "services": {
 
         "twig": {
-            "loader": {
-                "class": "\\Twig_Loader_Filesystem",
-                "parameters": ["../view/"]
-            },
-            "environment": {
-                "class": "\\Twig_Environment",
-                "parameters": ["@twig.loader", []]
+            "loaders": {
+                "app": {
+                    "class": "\\Twig_Loader_Filesystem",
+                    "parameters": ["../view/"]
+                }
             }
         },
 
