@@ -1,5 +1,14 @@
+# Always use index.php as the Front Controller
+DirectoryIndex index.php
+
+# Enable rewriting
 RewriteEngine On
-RewriteBase /
-RewriteCond  %{REQUEST_FILENAME} !-f
-RewriteCond  %{REQUEST_FILENAME} !-d
-RewriteRule  ^(.*)$ index.php [QSA,L]
+
+# Match any paths and store the base path in BASE
+RewriteCond %{REQUEST_URI}::$1 ^(/.+)/(.*)::\2$
+RewriteRule ^(.*) - [E=BASE:%1]
+
+# Rewrite any existing files to their normal location
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule .? - [L]
+RewriteRule .? %{ENV:BASE}/index.php [L]
