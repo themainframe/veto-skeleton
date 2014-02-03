@@ -16,36 +16,38 @@
     },
 
     "layers": {
-        "router": "layer.router",
-        "twig": "layer.twig"
+        "router": "layer.router"
     },
 
     "services": {
-
-        "twig": {
-            "loaders": {
-                "app": {
-                    "class": "\\Twig_Loader_Filesystem",
-                    "parameters": ["../view/"]
-                }
-            }
-        },
-
-        "layer": {
-            "router": {
-                "class": "\\Veto\\Layer\\RouterLayer"
-            },
-            "twig": {
-                "class": "\\Veto\\Twig\\Layer\\TwigLayer",
-                "parameters": ["@twig.environment"]
-            }
-        },
 
         "controller": {
             "helloworld": {
                 "class": "\\Controller\\HelloWorld",
                 "parameters": ["@twig.environment"],
                 "one_shot": true
+            }
+        },
+
+        "templating": {
+            "class": "\\Veto\\Templating\\Engine\\TwigEngine",
+            "parameters": ["@twig.environment"]
+        },
+
+        "twig": {
+            "environment": {
+                "class": "\\Twig_Environment",
+                "parameters": ["@twig.loader", []]
+            },
+            "loader": {
+                "class": "\\Twig_Loader_Filesystem",
+                "parameters": ["../view/"]
+            }
+        },
+
+        "layer": {
+            "router": {
+                "class": "\\Veto\\Layer\\RouterLayer"
             }
         }
     }

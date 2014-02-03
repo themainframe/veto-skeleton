@@ -1,8 +1,8 @@
 <?php
 namespace Controller;
 
+use Veto\HTTP\Response;
 use Veto\MVC\AbstractController;
-use Veto\Twig\HTTP\TwigResponse;
 
 class HelloWorld extends AbstractController
 {
@@ -13,16 +13,32 @@ class HelloWorld extends AbstractController
 
     public function sayHello()
     {
-        return new TwigResponse('Welcome.html', array(
-            'version' => $this->get('app')->version
-        ));
+        return new Response(
+            $this->render(
+
+                'Welcome.html',
+
+                array(
+                    'version' => $this->get('app')->version
+                )
+
+            )
+        );
     }
 
     public function sayYourName($yourName)
     {
-        return new TwigResponse('Welcome.html', array(
-            'version' => $this->get('app')->version,
-            'name' => $yourName
-        ));
+        return new Response(
+            $this->render(
+
+                'Welcome.html',
+
+                array(
+                    'version' => $this->get('app')->version,
+                    'name' => $yourName
+                )
+
+            )
+        );
     }
 }
