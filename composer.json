@@ -5,7 +5,8 @@
         "psr-0": { "": "src/" }
     },
     "require": {
-        "themainframe/veto": "dev-master"
+        "themainframe/veto": "dev-master",
+        "twig/twig" : "1.*"
     },
     "authors": [
         {
