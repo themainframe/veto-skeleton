@@ -4,13 +4,15 @@
         "home": {
             "url": "/",
             "controller": "controller.helloworld",
-            "action": "sayHello"
+            "action": "sayHello",
+            "methods": ["GET"]
         },
 
         "show_your_name": {
             "url": "/{yourName}",
             "controller": "controller.helloworld",
-            "action": "sayYourName"
+            "action": "sayYourName",
+            "methods": ["GET"]
         }
 
     },
@@ -47,7 +49,8 @@
 
         "layer": {
             "router": {
-                "class": "\\Veto\\Layer\\RouterLayer"
+                "class": "\\Veto\\Layer\\Router\\RouterLayer",
+                "parameters": ["@app"]
             }
         }
     }
