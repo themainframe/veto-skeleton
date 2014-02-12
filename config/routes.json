@@ -1,0 +1,19 @@
+{
+    "routes": {
+
+        "home": {
+            "url": "/",
+            "controller": "controller.helloworld",
+            "action": "sayHello",
+            "methods": ["GET"]
+        },
+
+        "show_your_name": {
+            "url": "/{yourName}",
+            "controller": "controller.helloworld",
+            "action": "sayYourName",
+            "methods": ["GET"]
+        }
+
+    }
+}

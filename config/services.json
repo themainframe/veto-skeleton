@@ -1,0 +1,35 @@
+{
+    "services": {
+
+        "controller": {
+            "helloworld": {
+                "class": "\\Controller\\HelloWorld",
+                "parameters": ["@twig.environment"],
+                "one_shot": true
+            }
+        },
+
+        "templating": {
+            "class": "\\Veto\\Templating\\Engine\\TwigEngine",
+            "parameters": ["@twig.environment"]
+        },
+
+        "twig": {
+            "environment": {
+                "class": "\\Twig_Environment",
+                "parameters": ["@twig.loader", []]
+            },
+            "loader": {
+                "class": "\\Twig_Loader_Filesystem",
+                "parameters": ["../view/"]
+            }
+        },
+
+        "layer": {
+            "router": {
+                "class": "\\Veto\\Layer\\Router\\RouterLayer",
+                "parameters": ["@app"]
+            }
+        }
+    }
+}
