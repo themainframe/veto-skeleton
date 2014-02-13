@@ -13,32 +13,28 @@ class HelloWorld extends AbstractController
 
     public function sayHello()
     {
-        return new Response(
-            $this->render(
+        return $this->render(
 
-                'Welcome.html',
+            'Welcome.html',
 
-                array(
-                    'version' => $this->get('app')->version
-                )
-
+            array(
+                'version' => $this->get('app')->version
             )
+
         );
     }
 
     public function sayYourName($yourName)
     {
-        return new Response(
-            $this->render(
+        return $this->render(
 
-                'Welcome.html',
+            'Welcome.html',
 
-                array(
-                    'version' => $this->get('app')->version,
-                    'name' => $yourName
-                )
-
+            array(
+                'version' => $this->get('app')->version,
+                'name' => $yourName
             )
+
         );
     }
 }
