@@ -7,4 +7,7 @@ $app = new Veto\App('../config/app.json');
 // Handle the incoming request
 $request = new \Veto\HTTP\Request;
 $request->initWithGlobals();
-$app->handle($request);
+$response = $app->handle($request);
+
+// Send the output
+$response->send();
