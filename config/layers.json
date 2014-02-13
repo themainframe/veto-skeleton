@@ -1,5 +1,8 @@
 {
     "layers": {
-        "router": "layer.router"
+        "router": {
+            "service": "layer.router",
+            "bypassed": false
+        }
     }
 }
