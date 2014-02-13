@@ -1,7 +1,6 @@
 <?php
 namespace Controller;
 
-use Veto\HTTP\Response;
 use Veto\MVC\AbstractController;
 
 class HelloWorld extends AbstractController
