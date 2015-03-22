@@ -2,7 +2,7 @@
 $loader = require_once '../vendor/autoload.php';
 
 // Create the application
-$app = new Veto\App('../config/app.json');
+$app = new Veto\App('../config/app.yml');
 
 // Handle the incoming request
 $request = new \Veto\HTTP\Request;

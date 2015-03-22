@@ -1,0 +1,7 @@
+parameters:
+    veto: awesome
+
+@import:
+  - layers.yml
+  - routes.yml
+  - services.yml
