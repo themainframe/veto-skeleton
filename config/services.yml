@@ -31,3 +31,8 @@ services:
             class: \Veto\Layer\Router\RouterLayer
             parameters:
               - @app
+
+        dispatcher:
+            class: \Veto\Layer\Dispatcher\DispatcherLayer
+            parameters:
+              - @container

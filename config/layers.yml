@@ -1,3 +1,5 @@
 layers:
     router:
         service: layer.router
+    dispatcher:
+        service: layer.dispatcher
