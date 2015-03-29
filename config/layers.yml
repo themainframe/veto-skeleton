@@ -1,5 +1,7 @@
 layers:
     router:
         service: layer.router
+        priority: 0
     dispatcher:
         service: layer.dispatcher
+        priority: 1
