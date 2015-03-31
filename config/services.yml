@@ -30,7 +30,8 @@ services:
         router:
             class: \Veto\Layer\Router\RouterLayer
             parameters:
-              - @app
+              - @config
+              - @dispatcher
 
         dispatcher:
             class: \Veto\Layer\Dispatcher\DispatcherLayer
