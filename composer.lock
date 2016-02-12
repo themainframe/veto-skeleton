@@ -1,10 +1,11 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "hash": "f6c90a57a519a2af15731728439be7e4",
+    "content-hash": "7338a8aeba812f6042d269548f142221",
     "packages": [
         {
             "name": "psr/http-message",
@@ -59,12 +60,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "7e9e156003c943f0023378691ee5b8366b77deda"
+                "reference": "c044d1744b8e91aaaa0d9bac683ab87ec7cbf359"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/7e9e156003c943f0023378691ee5b8366b77deda",
-                "reference": "7e9e156003c943f0023378691ee5b8366b77deda",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/c044d1744b8e91aaaa0d9bac683ab87ec7cbf359",
+                "reference": "c044d1744b8e91aaaa0d9bac683ab87ec7cbf359",
                 "shasum": ""
             },
             "require": {
@@ -90,17 +91,17 @@
             ],
             "authors": [
                 {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
             "description": "Symfony Yaml Component",
-            "homepage": "http://symfony.com",
-            "time": "2015-04-18 15:02:51"
+            "homepage": "https://symfony.com",
+            "time": "2015-07-26 08:59:42"
         },
         {
             "name": "themainframe/veto",
@@ -108,12 +109,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/themainframe/veto.git",
-                "reference": "896c01ccae066f61a537c1d4e95da55b61d1551f"
+                "reference": "7cba80830a91d24688c7637604e496dedb3ce184"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/themainframe/veto/zipball/896c01ccae066f61a537c1d4e95da55b61d1551f",
-                "reference": "896c01ccae066f61a537c1d4e95da55b61d1551f",
+                "url": "https://api.github.com/repos/themainframe/veto/zipball/7cba80830a91d24688c7637604e496dedb3ce184",
+                "reference": "7cba80830a91d24688c7637604e496dedb3ce184",
                 "shasum": ""
             },
             "require": {
@@ -125,8 +126,8 @@
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
-                    "Veto": "src/"
+                "psr-4": {
+                    "Veto\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -140,7 +141,7 @@
                 }
             ],
             "description": "Veto is a super-lightweight PHP framework to make building web applications easier.",
-            "time": "2015-04-26 23:23:57"
+            "time": "2016-02-12 18:07:06"
         },
         {
             "name": "twig/twig",
@@ -148,21 +149,25 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "7d5fe0fbd442f6bfc526260eb14ed99ea2a561f5"
+                "reference": "f0a4fa678465491947554f6687c5fca5e482f8ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/7d5fe0fbd442f6bfc526260eb14ed99ea2a561f5",
-                "reference": "7d5fe0fbd442f6bfc526260eb14ed99ea2a561f5",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/f0a4fa678465491947554f6687c5fca5e482f8ec",
+                "reference": "f0a4fa678465491947554f6687c5fca5e482f8ec",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2.7"
             },
+            "require-dev": {
+                "symfony/debug": "~2.7",
+                "symfony/phpunit-bridge": "~2.7"
+            },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.18-dev"
+                    "dev-master": "1.24-dev"
                 }
             },
             "autoload": {
@@ -197,7 +202,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2015-04-19 08:35:47"
+            "time": "2016-01-29 10:45:45"
         }
     ],
     "packages-dev": [],
