@@ -2,7 +2,7 @@
 $loader = require_once '../vendor/autoload.php';
 
 // Create the application
-$app = new Veto\App('../config/app.yml');
+$app = new Veto\App(true, '../config/app.yml');
 
 // Create a request from the current environment
 $environment = new \Veto\Collection\Bag($_SERVER);
