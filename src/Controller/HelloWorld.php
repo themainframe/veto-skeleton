@@ -17,7 +17,7 @@ class HelloWorld extends AbstractController
             'Welcome.html',
 
             array(
-                'version' => $this->get('app')->version
+                'version' => $this->getContainer()->getParameter('version')
             )
 
         );
@@ -30,7 +30,7 @@ class HelloWorld extends AbstractController
             'Welcome.html',
 
             array(
-                'version' => $this->get('app')->version,
+                'version' => $this->getContainer()->getParameter('version'),
                 'name' => $yourName
             )
 
