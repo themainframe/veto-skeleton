@@ -1,39 +1,37 @@
 <?php
 namespace Controller;
 
-use Veto\MVC\AbstractController;
+use Veto\HTTP\Response;
 
-class HelloWorld extends AbstractController
+class HelloWorld
 {
-    public function __construct(\Twig_Environment $twig)
+    private $twig;
+    private $version;
+
+    public function __construct(\Twig_Environment $twig, $version)
     {
         $this->twig = $twig;
+        $this->version = $version;
     }
 
     public function sayHello()
     {
-        return $this->render(
-
+        return new Response($this->twig->render(
             'Welcome.html',
-
             array(
-                'version' => $this->getContainer()->getParameter('version')
+                'version' => $this->version
             )
-
-        );
+        ));
     }
 
     public function sayYourName($yourName)
     {
-        return $this->render(
-
+        return new Response($this->twig->render(
             'Welcome.html',
-
             array(
-                'version' => $this->getContainer()->getParameter('version'),
+                'version' => $this->version,
                 'name' => $yourName
             )
-
-        );
+        ));
     }
 }

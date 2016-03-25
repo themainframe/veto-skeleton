@@ -6,6 +6,7 @@ services:
             class: \Controller\HelloWorld
             parameters:
               - @twig.environment
+              - %version%
             one_shot: true
 
     templating:
