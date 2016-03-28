@@ -11,5 +11,7 @@ routes:
         pattern: /{yourName}
         controller: controller.helloworld
         action: sayYourName
+        rules:
+            yourName: "[a-zA-Z]+"
         methods:
           - GET
