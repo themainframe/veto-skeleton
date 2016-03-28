@@ -1,14 +1,14 @@
 routes:
 
     home:
-        url: /
+        pattern: /
         controller: controller.helloworld
         action: sayHello
         methods:
           - GET
 
     show_your_name:
-        url: /{yourName}
+        pattern: /{yourName}
         controller: controller.helloworld
         action: sayYourName
         methods:
