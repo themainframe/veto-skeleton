@@ -1,7 +1,7 @@
 <?php
 namespace Controller;
 
-use Veto\HTTP\Response;
+use Veto\Http\Response;
 
 class HelloWorld
 {

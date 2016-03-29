@@ -10,7 +10,7 @@ $app = new Veto\App(true, $config->all());
 
 // Create a request from the current environment
 $environment = new \Veto\Collection\Bag($_SERVER);
-$request = \Veto\HTTP\Request::createFromEnvironment($environment);
+$request = \Veto\Http\Request::createFromEnvironment($environment);
 
 // Handle the incoming request
 $response = $app->handle($request);
